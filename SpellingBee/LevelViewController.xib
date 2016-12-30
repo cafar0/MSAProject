@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LevelViewController" customModule="SpellingBee" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="dgc-Vx-PSQ" id="xaC-l8-ewF"/>
+                <outlet property="collectionView2" destination="Mb1-yt-4Wt" id="wp9-99-QcF"/>
+                <outlet property="levelImageView" destination="uSt-sG-hFI" id="o9S-0X-xdl"/>
+                <outlet property="nextButton" destination="KLc-sh-M88" id="YXG-9S-sOx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uSt-sG-hFI">
+                    <rect key="frame" x="97" y="71" width="180" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="mSd-E1-XS6"/>
+                        <constraint firstAttribute="width" secondItem="uSt-sG-hFI" secondAttribute="height" multiplier="1:1" id="uht-WM-g8X"/>
+                    </constraints>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dgc-Vx-PSQ">
+                    <rect key="frame" x="0.0" y="315" width="375" height="64"/>
+                    <color key="backgroundColor" red="0.091216856060000004" green="0.55839251889999997" blue="0.62859848480000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Uzc-5r-SgP"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LkM-Jx-1BI">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lma-qm-eBp"/>
+                        <outlet property="delegate" destination="-1" id="GJV-P8-xU2"/>
+                    </connections>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Mb1-yt-4Wt">
+                    <rect key="frame" x="0.0" y="443" width="375" height="167"/>
+                    <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="167" id="R2g-Oy-VBO"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RSf-Ss-iVd">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="sTx-dZ-sGT"/>
+                        <outlet property="delegate" destination="-1" id="t2Q-Eb-Fch"/>
+                    </connections>
+                </collectionView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLc-sh-M88">
+                    <rect key="frame" x="155" y="494" width="64" height="64"/>
+                    <state key="normal" image="navigation"/>
+                    <connections>
+                        <action selector="onNextButton:" destination="-1" eventType="touchUpInside" id="oUi-99-d5P"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.83846413870000003" blue="0.50160306960000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KLc-sh-M88" secondAttribute="trailing" constant="156" id="06f-7Y-ISb"/>
+                <constraint firstItem="dgc-Vx-PSQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6UY-S1-nhc"/>
+                <constraint firstAttribute="trailing" secondItem="dgc-Vx-PSQ" secondAttribute="trailing" id="9PC-uP-tYT"/>
+                <constraint firstItem="Mb1-yt-4Wt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BCD-Nq-M5y"/>
+                <constraint firstItem="uSt-sG-hFI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZEu-R9-ggi"/>
+                <constraint firstAttribute="trailing" secondItem="Mb1-yt-4Wt" secondAttribute="trailing" id="gl4-rg-9Pt"/>
+                <constraint firstAttribute="bottom" secondItem="Mb1-yt-4Wt" secondAttribute="bottom" constant="57" id="iGv-GI-yj3"/>
+                <constraint firstItem="Mb1-yt-4Wt" firstAttribute="top" secondItem="dgc-Vx-PSQ" secondAttribute="bottom" constant="64" id="pYl-hm-OJ1"/>
+                <constraint firstItem="KLc-sh-M88" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="494" id="sf6-wL-MfL"/>
+                <constraint firstItem="uSt-sG-hFI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="yUh-QF-fbu"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navigation" width="64" height="64"/>
+    </resources>
+</document>
