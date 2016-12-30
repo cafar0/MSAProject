@@ -24,7 +24,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uSt-sG-hFI">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uSt-sG-hFI">
                     <rect key="frame" x="97" y="71" width="180" height="180"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="180" id="mSd-E1-XS6"/>
@@ -66,7 +66,7 @@
                     </connections>
                 </collectionView>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLc-sh-M88">
-                    <rect key="frame" x="155" y="494" width="64" height="64"/>
+                    <rect key="frame" x="155" y="546" width="64" height="64"/>
                     <state key="normal" image="navigation"/>
                     <connections>
                         <action selector="onNextButton:" destination="-1" eventType="touchUpInside" id="oUi-99-d5P"/>
@@ -75,15 +75,15 @@
             </subviews>
             <color key="backgroundColor" red="1" green="0.83846413870000003" blue="0.50160306960000001" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="KLc-sh-M88" secondAttribute="trailing" constant="156" id="06f-7Y-ISb"/>
                 <constraint firstItem="dgc-Vx-PSQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6UY-S1-nhc"/>
                 <constraint firstAttribute="trailing" secondItem="dgc-Vx-PSQ" secondAttribute="trailing" id="9PC-uP-tYT"/>
+                <constraint firstItem="KLc-sh-M88" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9ms-e5-ewE"/>
                 <constraint firstItem="Mb1-yt-4Wt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BCD-Nq-M5y"/>
+                <constraint firstItem="dgc-Vx-PSQ" firstAttribute="top" secondItem="uSt-sG-hFI" secondAttribute="bottom" constant="64" id="NhC-9o-7jb"/>
+                <constraint firstAttribute="bottom" secondItem="KLc-sh-M88" secondAttribute="bottom" constant="57" id="VO8-yc-lvj"/>
                 <constraint firstItem="uSt-sG-hFI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZEu-R9-ggi"/>
                 <constraint firstAttribute="trailing" secondItem="Mb1-yt-4Wt" secondAttribute="trailing" id="gl4-rg-9Pt"/>
-                <constraint firstAttribute="bottom" secondItem="Mb1-yt-4Wt" secondAttribute="bottom" constant="57" id="iGv-GI-yj3"/>
                 <constraint firstItem="Mb1-yt-4Wt" firstAttribute="top" secondItem="dgc-Vx-PSQ" secondAttribute="bottom" constant="64" id="pYl-hm-OJ1"/>
-                <constraint firstItem="KLc-sh-M88" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="494" id="sf6-wL-MfL"/>
                 <constraint firstItem="uSt-sG-hFI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="yUh-QF-fbu"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="54.5"/>

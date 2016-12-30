@@ -10,7 +10,9 @@ import UIKit
 
 class LetterCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var letterLabel: UILabel!
+    var letter : String?
+    
+    @IBOutlet weak var letterImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -13,19 +13,10 @@ class LevelSnail : InsectLevel {
     
     override init() {
         super.init()
-        imageView = UIImage(named: "rock")
+        imageView = UIImage(named: "snail")
         completeWord   = ["s","n","a","i","l"]
         incompleteWord = ["s","_","a","_","l"]
         options        = ["a", "s", "r", "t", "n" , "a", "e", "i", "h", "l"]
 
-    }
-    
-    override func isLevelComplete() -> Bool {
-        for index in 0 ... completeWord.count-1 {
-            if incompleteWord[index] != completeWord[index]{
-                return false
-            }
-        }
-        return true
     }
 }

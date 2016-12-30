@@ -8,8 +8,8 @@
 
 import UIKit
 
-class LevelViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-
+class MediumLevelViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
     var levelArray : [InsectLevel]?
     var levelIndex : Int?
     var levelModel : InsectLevel?
@@ -21,29 +21,35 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
     @IBOutlet weak var wordToImageConstraint: NSLayoutConstraint!
     @IBOutlet weak var nextButton: UIButton!
     
+    
     @IBAction func onNextButton(_ sender: Any) {
         
         if levelIndex! < (levelArray?.count)!-1 {
-            let viewController = LevelViewController()
+            let viewController = MediumLevelViewController()
             viewController.levelArray = levelArray
             viewController.levelIndex = self.levelIndex! + 1
             self.navigationController?.pushViewController(viewController, animated: true)
-
+            
         }
         else {
             let VC = LevelSeriesCompletViewController()
             self.navigationController?.pushViewController(VC, animated: true)
         }
+
     }
-    
+       
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         levelModel = levelArray?[levelIndex!]
         levelImageView.image = levelModel?.imageView
         nextButton.isHidden  = true
         collectionView.register(UINib(nibName: "LetterCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellId)
         collectionView2.register(UINib(nibName: "LetterCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellId)
+        
+        for index in 0 ... (levelModel?.incompleteWord.count)!-1 {
+            levelModel?.incompleteWord[index] = "_"
+        }
     }
     
     
@@ -60,9 +66,9 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
         }
         return 0
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-       
+        
         if collectionView === self.collectionView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! LetterCollectionViewCell
             cell.letter = levelModel?.incompleteWord[indexPath.row]
@@ -79,7 +85,7 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         return UICollectionViewCell()
     }
-
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView === self.collectionView2 {

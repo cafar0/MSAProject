@@ -17,6 +17,8 @@
 		D34C39721E16D26300C7DE9D /* levelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34C39711E16D26300C7DE9D /* levelFactory.swift */; };
 		D3584E1B1E16DB280082C3F3 /* LevelSeriesCompletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3584E191E16DB280082C3F3 /* LevelSeriesCompletViewController.swift */; };
 		D3584E1C1E16DB280082C3F3 /* LevelSeriesCompletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3584E1A1E16DB280082C3F3 /* LevelSeriesCompletViewController.xib */; };
+		D3584E201E1703680082C3F3 /* MediumLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3584E1E1E1703680082C3F3 /* MediumLevelViewController.swift */; };
+		D3584E211E1703680082C3F3 /* MediumLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3584E1F1E1703680082C3F3 /* MediumLevelViewController.xib */; };
 		D37C32321DE755D700B0A74F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C32311DE755D700B0A74F /* AppDelegate.swift */; };
 		D37C32341DE755D700B0A74F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C32331DE755D700B0A74F /* ViewController.swift */; };
 		D37C32371DE755D700B0A74F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37C32351DE755D700B0A74F /* Main.storyboard */; };
@@ -58,6 +60,8 @@
 		D34C39711E16D26300C7DE9D /* levelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = levelFactory.swift; sourceTree = "<group>"; };
 		D3584E191E16DB280082C3F3 /* LevelSeriesCompletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelSeriesCompletViewController.swift; path = SpellingBee/LevelSeriesCompletViewController.swift; sourceTree = "<group>"; };
 		D3584E1A1E16DB280082C3F3 /* LevelSeriesCompletViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LevelSeriesCompletViewController.xib; path = SpellingBee/LevelSeriesCompletViewController.xib; sourceTree = "<group>"; };
+		D3584E1E1E1703680082C3F3 /* MediumLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumLevelViewController.swift; sourceTree = "<group>"; };
+		D3584E1F1E1703680082C3F3 /* MediumLevelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediumLevelViewController.xib; sourceTree = "<group>"; };
 		D37C322E1DE755D700B0A74F /* SpellingBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpellingBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37C32311DE755D700B0A74F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D37C32331DE755D700B0A74F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +127,15 @@
 			name = EasyLevel;
 			sourceTree = "<group>";
 		};
+		D3584E1D1E1703100082C3F3 /* MediumLevel */ = {
+			isa = PBXGroup;
+			children = (
+				D3584E1E1E1703680082C3F3 /* MediumLevelViewController.swift */,
+				D3584E1F1E1703680082C3F3 /* MediumLevelViewController.xib */,
+			);
+			name = MediumLevel;
+			sourceTree = "<group>";
+		};
 		D37C32251DE755D700B0A74F = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +173,7 @@
 				D37C32641DE759EC00B0A74F /* DomainSelectViewController.xib */,
 				D34C39711E16D26300C7DE9D /* levelFactory.swift */,
 				D34A25FA1E13BDCE00EC02CC /* EasyLevel */,
+				D3584E1D1E1703100082C3F3 /* MediumLevel */,
 				D34A25EF1E13B74200EC02CC /* Model */,
 			);
 			path = SpellingBee;
@@ -297,6 +311,7 @@
 				D37C323C1DE755D700B0A74F /* LaunchScreen.storyboard in Resources */,
 				D37C32621DE7561800B0A74F /* StartViewController.xib in Resources */,
 				D3584E1C1E16DB280082C3F3 /* LevelSeriesCompletViewController.xib in Resources */,
+				D3584E211E1703680082C3F3 /* MediumLevelViewController.xib in Resources */,
 				D37C32391DE755D700B0A74F /* Assets.xcassets in Resources */,
 				D37C32661DE759EC00B0A74F /* DomainSelectViewController.xib in Resources */,
 				D37C32371DE755D700B0A74F /* Main.storyboard in Resources */,
@@ -335,6 +350,7 @@
 				D34C396F1E16D19F00C7DE9D /* InsectLevel.swift in Sources */,
 				D34C39721E16D26300C7DE9D /* levelFactory.swift in Sources */,
 				D37C32611DE7561800B0A74F /* StartViewController.swift in Sources */,
+				D3584E201E1703680082C3F3 /* MediumLevelViewController.swift in Sources */,
 				D34A25F11E13B7C600EC02CC /* LevelSnail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

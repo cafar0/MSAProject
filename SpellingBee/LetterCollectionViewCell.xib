@@ -18,25 +18,25 @@
                 <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXC-5v-F61" userLabel="letterLabel">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a" translatesAutoresizingMaskIntoConstraints="NO" id="uHO-W2-i2x">
                         <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </imageView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="kXC-5v-F61" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FMl-Wb-CKL"/>
-                <constraint firstAttribute="trailing" secondItem="kXC-5v-F61" secondAttribute="trailing" id="FbV-OU-u0F"/>
-                <constraint firstAttribute="bottom" secondItem="kXC-5v-F61" secondAttribute="bottom" id="LMc-JT-7TI"/>
-                <constraint firstItem="kXC-5v-F61" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MDL-42-HYQ"/>
+                <constraint firstItem="uHO-W2-i2x" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="I9p-18-4bH"/>
+                <constraint firstAttribute="trailing" secondItem="uHO-W2-i2x" secondAttribute="trailing" id="KUI-dq-tph"/>
+                <constraint firstAttribute="bottom" secondItem="uHO-W2-i2x" secondAttribute="bottom" id="cb2-fO-dqF"/>
+                <constraint firstItem="uHO-W2-i2x" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hTQ-Ht-NKU"/>
             </constraints>
             <size key="customSize" width="64" height="64"/>
             <connections>
-                <outlet property="letterLabel" destination="kXC-5v-F61" id="FDJ-Hr-0ew"/>
+                <outlet property="letterImageView" destination="uHO-W2-i2x" id="XUD-st-Gkt"/>
             </connections>
             <point key="canvasLocation" x="41" y="61"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="a" width="1200" height="1200"/>
+    </resources>
 </document>

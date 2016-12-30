@@ -13,20 +13,12 @@ class LevelSpider : InsectLevel {
     
     override init() {
         super.init()
-        imageView = UIImage(named: "rock")
+        imageView = UIImage(named: "spider")
         completeWord   = ["s","p","i","d","e", "r"]
         incompleteWord = ["s","_","_","d","_", "r"]
         options        = ["a", "s", "r", "t", "d", "n" , "a", "e", "i", "h", "l", "p"]
         
 
     }
-    
-    override func isLevelComplete() -> Bool {
-        for index in 0 ... completeWord.count-1 {
-            if incompleteWord[index] != completeWord[index]{
-                return false
-            }
-        }
-        return true
-    }
+
 }

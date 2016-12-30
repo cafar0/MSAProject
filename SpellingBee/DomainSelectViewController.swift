@@ -20,11 +20,18 @@ class DomainSelectViewController: UIViewController {
     @IBAction func onInsectsButton(_ sender: Any) {
         let levelArray = levelFactory.getInsectLevel()
         
-        let viewController = LevelViewController()
-        viewController.levelArray = levelArray
-        viewController.levelIndex = 0
-//        viewController.levelModel = levelArray[0]
-        self.navigationController?.pushViewController(viewController, animated: true)
+        if difficultyLevel == "easy" {
+            let viewController = LevelViewController()
+            viewController.levelArray = levelArray
+            viewController.levelIndex = 0
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+        if difficultyLevel == "medium" {
+            let viewController = MediumLevelViewController()
+            viewController.levelArray = levelArray
+            viewController.levelIndex = 0
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
     }
     
     override func viewDidLoad() {
