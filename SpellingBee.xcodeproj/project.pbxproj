@@ -7,22 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D32B22081E1C37CF00599545 /* LevelCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B22061E1C37CF00599545 /* LevelCompleteViewController.swift */; };
+		D32B22091E1C37CF00599545 /* LevelCompleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32B22071E1C37CF00599545 /* LevelCompleteViewController.xib */; };
 		D34A25F11E13B7C600EC02CC /* LevelSnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A25F01E13B7C600EC02CC /* LevelSnail.swift */; };
 		D34A25F41E13BC2600EC02CC /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A25F21E13BC2600EC02CC /* LevelViewController.swift */; };
 		D34A25F51E13BC2600EC02CC /* LevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D34A25F31E13BC2600EC02CC /* LevelViewController.xib */; };
 		D34A25F81E13BDC400EC02CC /* LetterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A25F61E13BDC400EC02CC /* LetterCollectionViewCell.swift */; };
 		D34A25F91E13BDC400EC02CC /* LetterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D34A25F71E13BDC400EC02CC /* LetterCollectionViewCell.xib */; };
+		D34A5A901E25612E00D976A5 /* LevelAnt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5A8F1E25612E00D976A5 /* LevelAnt.swift */; };
+		D34A5A921E2561B200D976A5 /* LevelBee.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5A911E2561B200D976A5 /* LevelBee.swift */; };
+		D34A5A941E25620700D976A5 /* LevelMantis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5A931E25620700D976A5 /* LevelMantis.swift */; };
+		D34A5A981E25625A00D976A5 /* LevelLadybug.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5A971E25625A00D976A5 /* LevelLadybug.swift */; };
+		D34A5A9A1E25628700D976A5 /* LevelScarab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5A991E25628700D976A5 /* LevelScarab.swift */; };
+		D34A5AA91E25663900D976A5 /* LevelBear.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AA01E25663900D976A5 /* LevelBear.swift */; };
+		D34A5AAA1E25663900D976A5 /* LevelBunny.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AA11E25663900D976A5 /* LevelBunny.swift */; };
+		D34A5AAB1E25663900D976A5 /* LevelCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AA21E25663900D976A5 /* LevelCat.swift */; };
+		D34A5AAC1E25663900D976A5 /* LevelGiraffe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AA31E25663900D976A5 /* LevelGiraffe.swift */; };
+		D34A5AAD1E25663900D976A5 /* LevelHorse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AA41E25663900D976A5 /* LevelHorse.swift */; };
+		D34A5AAE1E25663900D976A5 /* LevelLion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AA51E25663900D976A5 /* LevelLion.swift */; };
+		D34A5AAF1E25663900D976A5 /* LevelPanda.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AA61E25663900D976A5 /* LevelPanda.swift */; };
+		D34A5AB01E25663900D976A5 /* LevelPenguin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AA71E25663900D976A5 /* LevelPenguin.swift */; };
+		D34A5AB11E25663900D976A5 /* LevelTiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AA81E25663900D976A5 /* LevelTiger.swift */; };
+		D34A5ABB1E256A1200D976A5 /* LevelApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AB31E256A1200D976A5 /* LevelApple.swift */; };
+		D34A5ABC1E256A1200D976A5 /* LevelBurger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AB41E256A1200D976A5 /* LevelBurger.swift */; };
+		D34A5ABD1E256A1200D976A5 /* LevelCheese.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AB51E256A1200D976A5 /* LevelCheese.swift */; };
+		D34A5ABE1E256A1200D976A5 /* LevelFries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AB61E256A1200D976A5 /* LevelFries.swift */; };
+		D34A5ABF1E256A1200D976A5 /* LevelPizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AB71E256A1200D976A5 /* LevelPizza.swift */; };
+		D34A5AC01E256A1200D976A5 /* LevelSalad.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AB81E256A1200D976A5 /* LevelSalad.swift */; };
+		D34A5AC11E256A1200D976A5 /* LevelSalami.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AB91E256A1200D976A5 /* LevelSalami.swift */; };
+		D34A5AC21E256A1200D976A5 /* LevelSausage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5ABA1E256A1200D976A5 /* LevelSausage.swift */; };
+		D34A5AC61E256F1A00D976A5 /* BonusLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A5AC41E256F1A00D976A5 /* BonusLevelViewController.swift */; };
+		D34A5AC71E256F1A00D976A5 /* BonusLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D34A5AC51E256F1A00D976A5 /* BonusLevelViewController.xib */; };
+		D34A5AC91E2577CC00D976A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34A5AC81E2577CC00D976A5 /* Assets.xcassets */; };
 		D34C396D1E13D21100C7DE9D /* LevelSpider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34C396C1E13D21100C7DE9D /* LevelSpider.swift */; };
-		D34C396F1E16D19F00C7DE9D /* InsectLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34C396E1E16D19F00C7DE9D /* InsectLevel.swift */; };
+		D34C396F1E16D19F00C7DE9D /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34C396E1E16D19F00C7DE9D /* Level.swift */; };
 		D34C39721E16D26300C7DE9D /* levelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34C39711E16D26300C7DE9D /* levelFactory.swift */; };
-		D3584E1B1E16DB280082C3F3 /* LevelSeriesCompletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3584E191E16DB280082C3F3 /* LevelSeriesCompletViewController.swift */; };
-		D3584E1C1E16DB280082C3F3 /* LevelSeriesCompletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3584E1A1E16DB280082C3F3 /* LevelSeriesCompletViewController.xib */; };
 		D3584E201E1703680082C3F3 /* MediumLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3584E1E1E1703680082C3F3 /* MediumLevelViewController.swift */; };
 		D3584E211E1703680082C3F3 /* MediumLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3584E1F1E1703680082C3F3 /* MediumLevelViewController.xib */; };
 		D37C32321DE755D700B0A74F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C32311DE755D700B0A74F /* AppDelegate.swift */; };
 		D37C32341DE755D700B0A74F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C32331DE755D700B0A74F /* ViewController.swift */; };
 		D37C32371DE755D700B0A74F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37C32351DE755D700B0A74F /* Main.storyboard */; };
-		D37C32391DE755D700B0A74F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37C32381DE755D700B0A74F /* Assets.xcassets */; };
 		D37C323C1DE755D700B0A74F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37C323A1DE755D700B0A74F /* LaunchScreen.storyboard */; };
 		D37C32471DE755D800B0A74F /* SpellingBeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C32461DE755D800B0A74F /* SpellingBeeTests.swift */; };
 		D37C32521DE755D800B0A74F /* SpellingBeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C32511DE755D800B0A74F /* SpellingBeeUITests.swift */; };
@@ -50,23 +74,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D32B22061E1C37CF00599545 /* LevelCompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelCompleteViewController.swift; path = SpellingBee/LevelCompleteViewController.swift; sourceTree = "<group>"; };
+		D32B22071E1C37CF00599545 /* LevelCompleteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LevelCompleteViewController.xib; path = SpellingBee/LevelCompleteViewController.xib; sourceTree = "<group>"; };
 		D34A25F01E13B7C600EC02CC /* LevelSnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSnail.swift; sourceTree = "<group>"; };
 		D34A25F21E13BC2600EC02CC /* LevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
 		D34A25F31E13BC2600EC02CC /* LevelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelViewController.xib; sourceTree = "<group>"; };
 		D34A25F61E13BDC400EC02CC /* LetterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterCollectionViewCell.swift; sourceTree = "<group>"; };
 		D34A25F71E13BDC400EC02CC /* LetterCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LetterCollectionViewCell.xib; sourceTree = "<group>"; };
+		D34A5A8F1E25612E00D976A5 /* LevelAnt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelAnt.swift; path = ../../../../Downloads/pozeSiFisiere/insects/LevelAnt.swift; sourceTree = "<group>"; };
+		D34A5A911E2561B200D976A5 /* LevelBee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelBee.swift; path = ../../../../Downloads/pozeSiFisiere/insects/LevelBee.swift; sourceTree = "<group>"; };
+		D34A5A931E25620700D976A5 /* LevelMantis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelMantis.swift; path = ../../../../Downloads/pozeSiFisiere/insects/LevelMantis.swift; sourceTree = "<group>"; };
+		D34A5A971E25625A00D976A5 /* LevelLadybug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelLadybug.swift; path = ../../../../Downloads/pozeSiFisiere/insects/LevelLadybug.swift; sourceTree = "<group>"; };
+		D34A5A991E25628700D976A5 /* LevelScarab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelScarab.swift; path = ../../../../Downloads/pozeSiFisiere/insects/LevelScarab.swift; sourceTree = "<group>"; };
+		D34A5AA01E25663900D976A5 /* LevelBear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelBear.swift; path = ../../../../Downloads/pozeSiFisiere/animals/LevelBear.swift; sourceTree = "<group>"; };
+		D34A5AA11E25663900D976A5 /* LevelBunny.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelBunny.swift; path = ../../../../Downloads/pozeSiFisiere/animals/LevelBunny.swift; sourceTree = "<group>"; };
+		D34A5AA21E25663900D976A5 /* LevelCat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelCat.swift; path = ../../../../Downloads/pozeSiFisiere/animals/LevelCat.swift; sourceTree = "<group>"; };
+		D34A5AA31E25663900D976A5 /* LevelGiraffe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelGiraffe.swift; path = ../../../../Downloads/pozeSiFisiere/animals/LevelGiraffe.swift; sourceTree = "<group>"; };
+		D34A5AA41E25663900D976A5 /* LevelHorse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelHorse.swift; path = ../../../../Downloads/pozeSiFisiere/animals/LevelHorse.swift; sourceTree = "<group>"; };
+		D34A5AA51E25663900D976A5 /* LevelLion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelLion.swift; path = ../../../../Downloads/pozeSiFisiere/animals/LevelLion.swift; sourceTree = "<group>"; };
+		D34A5AA61E25663900D976A5 /* LevelPanda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelPanda.swift; path = ../../../../Downloads/pozeSiFisiere/animals/LevelPanda.swift; sourceTree = "<group>"; };
+		D34A5AA71E25663900D976A5 /* LevelPenguin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelPenguin.swift; path = ../../../../Downloads/pozeSiFisiere/animals/LevelPenguin.swift; sourceTree = "<group>"; };
+		D34A5AA81E25663900D976A5 /* LevelTiger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelTiger.swift; path = ../../../../Downloads/pozeSiFisiere/animals/LevelTiger.swift; sourceTree = "<group>"; };
+		D34A5AB31E256A1200D976A5 /* LevelApple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelApple.swift; path = ../../../../Downloads/pozeSiFisiere/foods/LevelApple.swift; sourceTree = "<group>"; };
+		D34A5AB41E256A1200D976A5 /* LevelBurger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelBurger.swift; path = ../../../../Downloads/pozeSiFisiere/foods/LevelBurger.swift; sourceTree = "<group>"; };
+		D34A5AB51E256A1200D976A5 /* LevelCheese.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelCheese.swift; path = ../../../../Downloads/pozeSiFisiere/foods/LevelCheese.swift; sourceTree = "<group>"; };
+		D34A5AB61E256A1200D976A5 /* LevelFries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelFries.swift; path = ../../../../Downloads/pozeSiFisiere/foods/LevelFries.swift; sourceTree = "<group>"; };
+		D34A5AB71E256A1200D976A5 /* LevelPizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelPizza.swift; path = ../../../../Downloads/pozeSiFisiere/foods/LevelPizza.swift; sourceTree = "<group>"; };
+		D34A5AB81E256A1200D976A5 /* LevelSalad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelSalad.swift; path = ../../../../Downloads/pozeSiFisiere/foods/LevelSalad.swift; sourceTree = "<group>"; };
+		D34A5AB91E256A1200D976A5 /* LevelSalami.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelSalami.swift; path = ../../../../Downloads/pozeSiFisiere/foods/LevelSalami.swift; sourceTree = "<group>"; };
+		D34A5ABA1E256A1200D976A5 /* LevelSausage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelSausage.swift; path = ../../../../Downloads/pozeSiFisiere/foods/LevelSausage.swift; sourceTree = "<group>"; };
+		D34A5AC41E256F1A00D976A5 /* BonusLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonusLevelViewController.swift; sourceTree = "<group>"; };
+		D34A5AC51E256F1A00D976A5 /* BonusLevelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BonusLevelViewController.xib; sourceTree = "<group>"; };
+		D34A5AC81E2577CC00D976A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D34C396C1E13D21100C7DE9D /* LevelSpider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSpider.swift; sourceTree = "<group>"; };
-		D34C396E1E16D19F00C7DE9D /* InsectLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsectLevel.swift; sourceTree = "<group>"; };
+		D34C396E1E16D19F00C7DE9D /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		D34C39711E16D26300C7DE9D /* levelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = levelFactory.swift; sourceTree = "<group>"; };
-		D3584E191E16DB280082C3F3 /* LevelSeriesCompletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelSeriesCompletViewController.swift; path = SpellingBee/LevelSeriesCompletViewController.swift; sourceTree = "<group>"; };
-		D3584E1A1E16DB280082C3F3 /* LevelSeriesCompletViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LevelSeriesCompletViewController.xib; path = SpellingBee/LevelSeriesCompletViewController.xib; sourceTree = "<group>"; };
 		D3584E1E1E1703680082C3F3 /* MediumLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumLevelViewController.swift; sourceTree = "<group>"; };
 		D3584E1F1E1703680082C3F3 /* MediumLevelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediumLevelViewController.xib; sourceTree = "<group>"; };
 		D37C322E1DE755D700B0A74F /* SpellingBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpellingBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37C32311DE755D700B0A74F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D37C32331DE755D700B0A74F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D37C32361DE755D700B0A74F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D37C32381DE755D700B0A74F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D37C323B1DE755D700B0A74F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D37C323D1DE755D700B0A74F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D37C32421DE755D800B0A74F /* SpellingBeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpellingBeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,9 +157,10 @@
 		D34A25EF1E13B74200EC02CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D34C396E1E16D19F00C7DE9D /* InsectLevel.swift */,
-				D34A25F01E13B7C600EC02CC /* LevelSnail.swift */,
-				D34C396C1E13D21100C7DE9D /* LevelSpider.swift */,
+				D34C396E1E16D19F00C7DE9D /* Level.swift */,
+				D34A5AB21E25694700D976A5 /* Food */,
+				D34A5A9F1E25660200D976A5 /* Animals */,
+				D34A5A9B1E2562A400D976A5 /* Insects */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -127,6 +176,60 @@
 			name = EasyLevel;
 			sourceTree = "<group>";
 		};
+		D34A5A9B1E2562A400D976A5 /* Insects */ = {
+			isa = PBXGroup;
+			children = (
+				D34A25F01E13B7C600EC02CC /* LevelSnail.swift */,
+				D34C396C1E13D21100C7DE9D /* LevelSpider.swift */,
+				D34A5A8F1E25612E00D976A5 /* LevelAnt.swift */,
+				D34A5A911E2561B200D976A5 /* LevelBee.swift */,
+				D34A5A931E25620700D976A5 /* LevelMantis.swift */,
+				D34A5A971E25625A00D976A5 /* LevelLadybug.swift */,
+				D34A5A991E25628700D976A5 /* LevelScarab.swift */,
+			);
+			name = Insects;
+			sourceTree = "<group>";
+		};
+		D34A5A9F1E25660200D976A5 /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				D34A5AA01E25663900D976A5 /* LevelBear.swift */,
+				D34A5AA11E25663900D976A5 /* LevelBunny.swift */,
+				D34A5AA21E25663900D976A5 /* LevelCat.swift */,
+				D34A5AA31E25663900D976A5 /* LevelGiraffe.swift */,
+				D34A5AA41E25663900D976A5 /* LevelHorse.swift */,
+				D34A5AA51E25663900D976A5 /* LevelLion.swift */,
+				D34A5AA61E25663900D976A5 /* LevelPanda.swift */,
+				D34A5AA71E25663900D976A5 /* LevelPenguin.swift */,
+				D34A5AA81E25663900D976A5 /* LevelTiger.swift */,
+			);
+			name = Animals;
+			sourceTree = "<group>";
+		};
+		D34A5AB21E25694700D976A5 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				D34A5AB31E256A1200D976A5 /* LevelApple.swift */,
+				D34A5AB41E256A1200D976A5 /* LevelBurger.swift */,
+				D34A5AB51E256A1200D976A5 /* LevelCheese.swift */,
+				D34A5AB61E256A1200D976A5 /* LevelFries.swift */,
+				D34A5AB71E256A1200D976A5 /* LevelPizza.swift */,
+				D34A5AB81E256A1200D976A5 /* LevelSalad.swift */,
+				D34A5AB91E256A1200D976A5 /* LevelSalami.swift */,
+				D34A5ABA1E256A1200D976A5 /* LevelSausage.swift */,
+			);
+			name = Food;
+			sourceTree = "<group>";
+		};
+		D34A5AC31E256EDA00D976A5 /* BonusLevel */ = {
+			isa = PBXGroup;
+			children = (
+				D34A5AC41E256F1A00D976A5 /* BonusLevelViewController.swift */,
+				D34A5AC51E256F1A00D976A5 /* BonusLevelViewController.xib */,
+			);
+			name = BonusLevel;
+			sourceTree = "<group>";
+		};
 		D3584E1D1E1703100082C3F3 /* MediumLevel */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,8 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				D37C32301DE755D700B0A74F /* SpellingBee */,
-				D3584E191E16DB280082C3F3 /* LevelSeriesCompletViewController.swift */,
-				D3584E1A1E16DB280082C3F3 /* LevelSeriesCompletViewController.xib */,
+				D32B22061E1C37CF00599545 /* LevelCompleteViewController.swift */,
+				D32B22071E1C37CF00599545 /* LevelCompleteViewController.xib */,
 				D37C32451DE755D800B0A74F /* SpellingBeeTests */,
 				D37C32501DE755D800B0A74F /* SpellingBeeUITests */,
 				D37C322F1DE755D700B0A74F /* Products */,
@@ -164,9 +267,9 @@
 				D37C32311DE755D700B0A74F /* AppDelegate.swift */,
 				D37C32331DE755D700B0A74F /* ViewController.swift */,
 				D37C32351DE755D700B0A74F /* Main.storyboard */,
-				D37C32381DE755D700B0A74F /* Assets.xcassets */,
 				D37C323A1DE755D700B0A74F /* LaunchScreen.storyboard */,
 				D37C323D1DE755D700B0A74F /* Info.plist */,
+				D34A5AC81E2577CC00D976A5 /* Assets.xcassets */,
 				D37C325F1DE7561800B0A74F /* StartViewController.swift */,
 				D37C32601DE7561800B0A74F /* StartViewController.xib */,
 				D37C32631DE759EC00B0A74F /* DomainSelectViewController.swift */,
@@ -174,6 +277,7 @@
 				D34C39711E16D26300C7DE9D /* levelFactory.swift */,
 				D34A25FA1E13BDCE00EC02CC /* EasyLevel */,
 				D3584E1D1E1703100082C3F3 /* MediumLevel */,
+				D34A5AC31E256EDA00D976A5 /* BonusLevel */,
 				D34A25EF1E13B74200EC02CC /* Model */,
 			);
 			path = SpellingBee;
@@ -310,12 +414,13 @@
 				D34A25F91E13BDC400EC02CC /* LetterCollectionViewCell.xib in Resources */,
 				D37C323C1DE755D700B0A74F /* LaunchScreen.storyboard in Resources */,
 				D37C32621DE7561800B0A74F /* StartViewController.xib in Resources */,
-				D3584E1C1E16DB280082C3F3 /* LevelSeriesCompletViewController.xib in Resources */,
 				D3584E211E1703680082C3F3 /* MediumLevelViewController.xib in Resources */,
-				D37C32391DE755D700B0A74F /* Assets.xcassets in Resources */,
+				D34A5AC91E2577CC00D976A5 /* Assets.xcassets in Resources */,
+				D34A5AC71E256F1A00D976A5 /* BonusLevelViewController.xib in Resources */,
 				D37C32661DE759EC00B0A74F /* DomainSelectViewController.xib in Resources */,
 				D37C32371DE755D700B0A74F /* Main.storyboard in Resources */,
 				D34A25F51E13BC2600EC02CC /* LevelViewController.xib in Resources */,
+				D32B22091E1C37CF00599545 /* LevelCompleteViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,17 +445,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34A5AAA1E25663900D976A5 /* LevelBunny.swift in Sources */,
+				D34A5ABF1E256A1200D976A5 /* LevelPizza.swift in Sources */,
+				D34A5AA91E25663900D976A5 /* LevelBear.swift in Sources */,
+				D34A5AB11E25663900D976A5 /* LevelTiger.swift in Sources */,
 				D37C32651DE759EC00B0A74F /* DomainSelectViewController.swift in Sources */,
 				D37C32341DE755D700B0A74F /* ViewController.swift in Sources */,
 				D37C32321DE755D700B0A74F /* AppDelegate.swift in Sources */,
+				D34A5ABB1E256A1200D976A5 /* LevelApple.swift in Sources */,
+				D34A5AC01E256A1200D976A5 /* LevelSalad.swift in Sources */,
+				D34A5AAE1E25663900D976A5 /* LevelLion.swift in Sources */,
 				D34C396D1E13D21100C7DE9D /* LevelSpider.swift in Sources */,
 				D34A25F81E13BDC400EC02CC /* LetterCollectionViewCell.swift in Sources */,
-				D3584E1B1E16DB280082C3F3 /* LevelSeriesCompletViewController.swift in Sources */,
+				D34A5ABD1E256A1200D976A5 /* LevelCheese.swift in Sources */,
 				D34A25F41E13BC2600EC02CC /* LevelViewController.swift in Sources */,
-				D34C396F1E16D19F00C7DE9D /* InsectLevel.swift in Sources */,
+				D34A5ABC1E256A1200D976A5 /* LevelBurger.swift in Sources */,
+				D34C396F1E16D19F00C7DE9D /* Level.swift in Sources */,
 				D34C39721E16D26300C7DE9D /* levelFactory.swift in Sources */,
+				D34A5AC61E256F1A00D976A5 /* BonusLevelViewController.swift in Sources */,
+				D32B22081E1C37CF00599545 /* LevelCompleteViewController.swift in Sources */,
+				D34A5A901E25612E00D976A5 /* LevelAnt.swift in Sources */,
 				D37C32611DE7561800B0A74F /* StartViewController.swift in Sources */,
+				D34A5A981E25625A00D976A5 /* LevelLadybug.swift in Sources */,
+				D34A5AC11E256A1200D976A5 /* LevelSalami.swift in Sources */,
+				D34A5AAF1E25663900D976A5 /* LevelPanda.swift in Sources */,
+				D34A5ABE1E256A1200D976A5 /* LevelFries.swift in Sources */,
+				D34A5AB01E25663900D976A5 /* LevelPenguin.swift in Sources */,
+				D34A5AAD1E25663900D976A5 /* LevelHorse.swift in Sources */,
 				D3584E201E1703680082C3F3 /* MediumLevelViewController.swift in Sources */,
+				D34A5A9A1E25628700D976A5 /* LevelScarab.swift in Sources */,
+				D34A5AC21E256A1200D976A5 /* LevelSausage.swift in Sources */,
+				D34A5A921E2561B200D976A5 /* LevelBee.swift in Sources */,
+				D34A5AAB1E25663900D976A5 /* LevelCat.swift in Sources */,
+				D34A5AAC1E25663900D976A5 /* LevelGiraffe.swift in Sources */,
+				D34A5A941E25620700D976A5 /* LevelMantis.swift in Sources */,
 				D34A25F11E13B7C600EC02CC /* LevelSnail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

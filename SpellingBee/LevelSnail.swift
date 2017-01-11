@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class LevelSnail : InsectLevel {
+class LevelSnail : Level {
     
     override init() {
         super.init()

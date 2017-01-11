@@ -10,20 +10,18 @@ import UIKit
 
 class StartViewController: UIViewController {
 
-    @IBAction func onEasyButton(_ sender: Any) {
-        let viewController = DomainSelectViewController()
-        viewController.difficultyLevel = "easy"
+    @IBAction func onEasyButton(_ sender: UIButton) {
+        let viewController = prepareViewController(button : sender, difficulty: "easy")
         self.navigationController?.pushViewController(viewController, animated: true)
     }
-    @IBAction func onMediumButton(_ sender: Any) {
-        let viewController = DomainSelectViewController()
-        viewController.difficultyLevel = "medium"
+    @IBAction func onMediumButton(_ sender: UIButton) {
+        let viewController = prepareViewController(button : sender, difficulty: "medium")
         self.navigationController?.pushViewController(viewController, animated: true)
 
     }
-    @IBAction func onHardButton(_ sender: Any) {
-        let viewController = DomainSelectViewController()
-        viewController.difficultyLevel = "hard"
+    @IBAction func onHardButton(_ sender: UIButton) {
+        let viewController = BonusLevelViewController()
+        viewController.level = 0
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
@@ -37,6 +35,15 @@ class StartViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    /*MARK - Private*/
+    func prepareViewController(button : UIButton, difficulty : String) -> DomainSelectViewController {
+        let viewController = DomainSelectViewController()
+        viewController.difficultyLevel = difficulty
+        viewController.difficultyImage = button.imageView?.image
+        
+        return viewController
     }
     
 

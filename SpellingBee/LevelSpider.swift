@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class LevelSpider : InsectLevel {
+class LevelSpider : Level {
     
     override init() {
         super.init()

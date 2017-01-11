@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BonusLevelViewController" customModule="SpellingBee" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomButtonView" destination="71n-Jl-ip1" id="h4N-7U-0rY"/>
+                <outlet property="bottomLabel" destination="kaE-IL-29D" id="Vr5-no-Vul"/>
+                <outlet property="leftButtonView" destination="Ynn-XL-fo7" id="306-kF-Qma"/>
+                <outlet property="leftLabel" destination="D5W-RH-Vgr" id="rC5-b8-9E6"/>
+                <outlet property="letterImageView" destination="Pps-rl-C6p" id="0Ao-aF-AMI"/>
+                <outlet property="rightButtonView" destination="sJk-0P-Io6" id="JU7-Df-5SF"/>
+                <outlet property="rightLabel" destination="Ehv-Xv-uOv" id="25Y-Gg-obf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a" translatesAutoresizingMaskIntoConstraints="NO" id="Pps-rl-C6p">
+                    <rect key="frame" x="139" y="242" width="96" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="H8E-IV-Dhg"/>
+                        <constraint firstAttribute="width" constant="96" id="apT-ZQ-sRz"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynn-XL-fo7">
+                    <rect key="frame" x="38" y="358" width="96" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="35k-Zi-veq"/>
+                        <constraint firstAttribute="width" constant="96" id="zOI-Z6-dyM"/>
+                    </constraints>
+                    <state key="normal" image="apple"/>
+                    <connections>
+                        <action selector="onLeftButton:" destination="-1" eventType="touchUpInside" id="NsM-Ev-sT0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJk-0P-Io6">
+                    <rect key="frame" x="263" y="358" width="96" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="Cs6-Hi-B46"/>
+                        <constraint firstAttribute="width" constant="96" id="l3A-47-f3s"/>
+                    </constraints>
+                    <state key="normal" image="tiger"/>
+                    <connections>
+                        <action selector="onRightButton:" destination="-1" eventType="touchUpInside" id="ykP-MX-A31"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71n-Jl-ip1">
+                    <rect key="frame" x="139" y="494" width="96" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="E4a-Xv-he8"/>
+                        <constraint firstAttribute="width" constant="96" id="R5e-IF-DDf"/>
+                    </constraints>
+                    <state key="normal" image="burger"/>
+                    <connections>
+                        <action selector="onBottomButton:" destination="-1" eventType="touchUpInside" id="PLX-2H-4kE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5W-RH-Vgr">
+                    <rect key="frame" x="38" y="462" width="96" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="96" id="E43-IK-g1v"/>
+                        <constraint firstAttribute="height" constant="24" id="p53-74-tO5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehv-Xv-uOv">
+                    <rect key="frame" x="263" y="462" width="96" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="96" id="eGe-87-5T8"/>
+                        <constraint firstAttribute="height" constant="24" id="seS-xE-3qr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="burger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaE-IL-29D">
+                    <rect key="frame" x="125" y="598" width="124" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="4Yo-wZ-NmO"/>
+                        <constraint firstAttribute="width" constant="124" id="8FE-6L-hLc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.83846413870000003" blue="0.50160306960000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Ehv-Xv-uOv" firstAttribute="centerX" secondItem="sJk-0P-Io6" secondAttribute="centerX" id="2y9-PE-vkd"/>
+                <constraint firstItem="sJk-0P-Io6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="358" id="7zg-K5-gCQ"/>
+                <constraint firstItem="71n-Jl-ip1" firstAttribute="centerX" secondItem="Pps-rl-C6p" secondAttribute="centerX" id="9k3-MN-GnC"/>
+                <constraint firstAttribute="trailing" secondItem="sJk-0P-Io6" secondAttribute="trailing" constant="16" id="Fql-ll-nSW"/>
+                <constraint firstItem="kaE-IL-29D" firstAttribute="top" secondItem="71n-Jl-ip1" secondAttribute="bottom" constant="8" id="Gnf-5D-Wn7"/>
+                <constraint firstItem="sJk-0P-Io6" firstAttribute="centerY" secondItem="Ynn-XL-fo7" secondAttribute="centerY" id="HkA-tw-OXB"/>
+                <constraint firstItem="Ynn-XL-fo7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="38" id="IeP-hw-dKV"/>
+                <constraint firstItem="Ynn-XL-fo7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="358" id="PSC-c8-ict"/>
+                <constraint firstItem="Pps-rl-C6p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="242" id="bCT-Cy-o9Q"/>
+                <constraint firstItem="Ehv-Xv-uOv" firstAttribute="top" secondItem="sJk-0P-Io6" secondAttribute="bottom" constant="8" id="e2C-9K-1Kc"/>
+                <constraint firstItem="Pps-rl-C6p" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eiT-Um-PxE"/>
+                <constraint firstAttribute="bottom" secondItem="kaE-IL-29D" secondAttribute="bottom" constant="45" id="gSI-NN-a3O"/>
+                <constraint firstItem="D5W-RH-Vgr" firstAttribute="top" secondItem="Ynn-XL-fo7" secondAttribute="bottom" constant="8" id="hxs-d3-R0E"/>
+                <constraint firstItem="D5W-RH-Vgr" firstAttribute="centerX" secondItem="Ynn-XL-fo7" secondAttribute="centerX" id="iOp-3J-41d"/>
+                <constraint firstItem="kaE-IL-29D" firstAttribute="centerX" secondItem="71n-Jl-ip1" secondAttribute="centerX" id="pEA-rL-8cv"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="58.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="a" width="1200" height="1200"/>
+        <image name="apple" width="2742" height="3504"/>
+        <image name="burger" width="627" height="458"/>
+        <image name="tiger" width="900" height="515"/>
+    </resources>
+</document>

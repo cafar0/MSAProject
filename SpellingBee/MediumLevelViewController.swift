@@ -10,9 +10,9 @@ import UIKit
 
 class MediumLevelViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var levelArray : [InsectLevel]?
+    var levelArray : [Level]?
     var levelIndex : Int?
-    var levelModel : InsectLevel?
+    var levelModel : Level?
     let cellId = "LetterCollectionViewCellID"
     
     @IBOutlet weak var levelImageView: UIImageView!
@@ -32,7 +32,7 @@ class MediumLevelViewController: UIViewController, UICollectionViewDataSource, U
             
         }
         else {
-            let VC = LevelSeriesCompletViewController()
+            let VC = LevelCompleteViewController()
             self.navigationController?.pushViewController(VC, animated: true)
         }
 

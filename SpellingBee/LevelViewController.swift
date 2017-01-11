@@ -10,9 +10,9 @@ import UIKit
 
 class LevelViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    var levelArray : [InsectLevel]?
+    var levelArray : [Level]?
     var levelIndex : Int?
-    var levelModel : InsectLevel?
+    var levelModel : Level?
     let cellId = "LetterCollectionViewCellID"
     
     @IBOutlet weak var levelImageView: UIImageView!
@@ -21,6 +21,10 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
     @IBOutlet weak var wordToImageConstraint: NSLayoutConstraint!
     @IBOutlet weak var nextButton: UIButton!
     
+    @IBAction func onBackButton(_ sender: Any) {
+        
+        let _ = self.navigationController?.popToViewController((self.navigationController?.viewControllers[1])!, animated: true)
+    }
     @IBAction func onNextButton(_ sender: Any) {
         
         if levelIndex! < (levelArray?.count)!-1 {
@@ -31,7 +35,7 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
 
         }
         else {
-            let VC = LevelSeriesCompletViewController()
+            let VC = LevelCompleteViewController()
             self.navigationController?.pushViewController(VC, animated: true)
         }
     }
