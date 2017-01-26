@@ -12,6 +12,8 @@ class BonusLevelViewController: UIViewController {
 
     var level : Int?
     var levelModel = [""]
+    var totalStars : Int?
+    var starArray : [UIImageView] = []
     
     @IBOutlet weak var letterImageView: UIImageView!
     @IBOutlet weak var leftButtonView: UIButton!
@@ -21,6 +23,9 @@ class BonusLevelViewController: UIViewController {
     @IBOutlet weak var rightLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
     
+    @IBOutlet weak var leftStar: UIImageView!
+    @IBOutlet weak var middleStar: UIImageView!
+    @IBOutlet weak var rightStar: UIImageView!
     
     @IBAction func onLeftButton(_ sender: Any) {
         checkButton(label: leftLabel)
@@ -36,7 +41,7 @@ class BonusLevelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        starArray = [rightStar, middleStar, leftStar]
         levelModel = levelFactory.getBonusLevel()
         
         let random = Int(arc4random())
@@ -64,13 +69,36 @@ class BonusLevelViewController: UIViewController {
             if level! < 5 {
                 let viewController = BonusLevelViewController()
                 viewController.level = level! + 1
+                viewController.totalStars = totalStars! + countStars()
                 self.navigationController?.pushViewController(viewController, animated: true)
             }
             else {
                 let viewController = LevelCompleteViewController()
+                viewController.starsAquired = totalStars! + countStars()
+                
+                viewController.totalStars = levelModel.count * 3
                 self.navigationController?.pushViewController(viewController, animated: true)
             }
         }
+        else {
+            for star in starArray {
+                if star.isHidden == false {
+                    star.isHidden = true
+                    break
+                }
+            }
+        }
+    }
+
+    //MARK: Private
+    private func countStars() -> Int {
+        var number = 0
+        for star in starArray {
+            if star.isHidden == false{
+                number += 1
+            }
+        }
+        return number
     }
 
 }

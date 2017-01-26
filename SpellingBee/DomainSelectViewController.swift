@@ -34,12 +34,14 @@ class DomainSelectViewController: UIViewController {
             let viewController = LevelViewController()
             viewController.levelArray = levelArray
             viewController.levelIndex = 0
+            viewController.totalStars = 0
             self.levelViewController = viewController
         }
         if difficultyLevel == "medium" {
             let viewController = MediumLevelViewController()
             viewController.levelArray = levelArray
             viewController.levelIndex = 0
+            viewController.totalStars = 0
             self.levelViewController = viewController
         }
 
@@ -53,12 +55,14 @@ class DomainSelectViewController: UIViewController {
             let viewController = LevelViewController()
             viewController.levelArray = levelArray
             viewController.levelIndex = 0
+            viewController.totalStars = 0
             self.levelViewController = viewController
         }
         if difficultyLevel == "medium" {
             let viewController = MediumLevelViewController()
             viewController.levelArray = levelArray
             viewController.levelIndex = 0
+            viewController.totalStars = 0
             self.levelViewController = viewController
         }
 
@@ -72,12 +76,14 @@ class DomainSelectViewController: UIViewController {
             let viewController = LevelViewController()
             viewController.levelArray = levelArray
             viewController.levelIndex = 0
+            viewController.totalStars = 0
             self.levelViewController = viewController
         }
         if difficultyLevel == "medium" {
             let viewController = MediumLevelViewController()
             viewController.levelArray = levelArray
             viewController.levelIndex = 0
+            viewController.totalStars = 0
             self.levelViewController = viewController
         }
     }

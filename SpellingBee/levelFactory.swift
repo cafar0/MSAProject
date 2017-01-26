@@ -72,13 +72,13 @@ class levelFactory: NSObject {
     }
     
      static func getFoodLevel() -> [Level] {
-        return [LevelApple(),
+        return [LevelBurger(),
+                LevelFries(),
+                LevelApple(),
                 LevelCheese(),
                 LevelSausage(),
                 LevelPizza(),
-                LevelBurger(),
-                LevelSalami(),
-                LevelFries()
+                LevelSalami()
                 ]
     }
     

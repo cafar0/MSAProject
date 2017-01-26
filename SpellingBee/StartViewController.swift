@@ -11,17 +11,19 @@ import UIKit
 class StartViewController: UIViewController {
 
     @IBAction func onEasyButton(_ sender: UIButton) {
-        let viewController = prepareViewController(button : sender, difficulty: "easy")
+        let viewController = BonusLevelViewController()
+        viewController.level = 0
+        viewController.totalStars = 0
         self.navigationController?.pushViewController(viewController, animated: true)
+
     }
     @IBAction func onMediumButton(_ sender: UIButton) {
-        let viewController = prepareViewController(button : sender, difficulty: "medium")
+        let viewController = prepareViewController(button : sender, difficulty: "easy")
         self.navigationController?.pushViewController(viewController, animated: true)
 
     }
     @IBAction func onHardButton(_ sender: UIButton) {
-        let viewController = BonusLevelViewController()
-        viewController.level = 0
+        let viewController = prepareViewController(button : sender, difficulty: "medium")
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     

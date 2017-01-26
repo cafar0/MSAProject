@@ -15,9 +15,12 @@
                 <outlet property="bottomLabel" destination="kaE-IL-29D" id="Vr5-no-Vul"/>
                 <outlet property="leftButtonView" destination="Ynn-XL-fo7" id="306-kF-Qma"/>
                 <outlet property="leftLabel" destination="D5W-RH-Vgr" id="rC5-b8-9E6"/>
+                <outlet property="leftStar" destination="mdD-5d-mSL" id="jQC-cs-U9w"/>
                 <outlet property="letterImageView" destination="Pps-rl-C6p" id="0Ao-aF-AMI"/>
+                <outlet property="middleStar" destination="8De-xf-hKf" id="H5U-Hj-Vf5"/>
                 <outlet property="rightButtonView" destination="sJk-0P-Io6" id="JU7-Df-5SF"/>
                 <outlet property="rightLabel" destination="Ehv-Xv-uOv" id="25Y-Gg-obf"/>
+                <outlet property="rightStar" destination="DFB-e0-R3G" id="zCM-bm-Jlm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,7 +30,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a" translatesAutoresizingMaskIntoConstraints="NO" id="Pps-rl-C6p">
-                    <rect key="frame" x="139" y="242" width="96" height="96"/>
+                    <rect key="frame" x="139" y="104" width="96" height="96"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="96" id="H8E-IV-Dhg"/>
                         <constraint firstAttribute="width" constant="96" id="apT-ZQ-sRz"/>
@@ -96,6 +99,30 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greyStar" translatesAutoresizingMaskIntoConstraints="NO" id="8K9-8r-aK4">
+                    <rect key="frame" x="38" y="253" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greyStar" translatesAutoresizingMaskIntoConstraints="NO" id="ANp-SG-hfh">
+                    <rect key="frame" x="155" y="253" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greyStar" translatesAutoresizingMaskIntoConstraints="NO" id="IH6-hT-5aC">
+                    <rect key="frame" x="263" y="253" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goldenStar" translatesAutoresizingMaskIntoConstraints="NO" id="DFB-e0-R3G">
+                    <rect key="frame" x="263" y="253" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goldenStar" translatesAutoresizingMaskIntoConstraints="NO" id="8De-xf-hKf">
+                    <rect key="frame" x="155" y="253" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goldenStar" translatesAutoresizingMaskIntoConstraints="NO" id="mdD-5d-mSL">
+                    <rect key="frame" x="38" y="253" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="0.83846413870000003" blue="0.50160306960000001" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
@@ -107,7 +134,7 @@
                 <constraint firstItem="sJk-0P-Io6" firstAttribute="centerY" secondItem="Ynn-XL-fo7" secondAttribute="centerY" id="HkA-tw-OXB"/>
                 <constraint firstItem="Ynn-XL-fo7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="38" id="IeP-hw-dKV"/>
                 <constraint firstItem="Ynn-XL-fo7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="358" id="PSC-c8-ict"/>
-                <constraint firstItem="Pps-rl-C6p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="242" id="bCT-Cy-o9Q"/>
+                <constraint firstItem="Pps-rl-C6p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="104" id="bCT-Cy-o9Q"/>
                 <constraint firstItem="Ehv-Xv-uOv" firstAttribute="top" secondItem="sJk-0P-Io6" secondAttribute="bottom" constant="8" id="e2C-9K-1Kc"/>
                 <constraint firstItem="Pps-rl-C6p" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eiT-Um-PxE"/>
                 <constraint firstAttribute="bottom" secondItem="kaE-IL-29D" secondAttribute="bottom" constant="45" id="gSI-NN-a3O"/>
@@ -122,6 +149,8 @@
         <image name="a" width="1200" height="1200"/>
         <image name="apple" width="2742" height="3504"/>
         <image name="burger" width="627" height="458"/>
+        <image name="goldenStar" width="143" height="122"/>
+        <image name="greyStar" width="143" height="128"/>
         <image name="tiger" width="900" height="515"/>
     </resources>
 </document>

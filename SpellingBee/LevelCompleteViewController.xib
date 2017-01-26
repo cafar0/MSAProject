@@ -11,6 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LevelCompleteViewController" customModule="SpellingBee" customModuleProvider="target">
             <connections>
+                <outlet property="label" destination="Ep7-dK-DeU" id="ChM-Lk-1yh"/>
+                <outlet property="leftStar" destination="fXE-XK-8Te" id="Rlr-tC-cgL"/>
+                <outlet property="middleStar" destination="hih-Cp-cJS" id="KB6-UU-UjU"/>
+                <outlet property="rightStar" destination="BGX-WI-Dox" id="7su-sV-yIO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,22 +31,50 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="congrats" translatesAutoresizingMaskIntoConstraints="NO" id="xn1-sA-y14">
-                    <rect key="frame" x="26" y="176" width="324" height="269"/>
+                    <rect key="frame" x="25" y="71" width="324" height="269"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="269" id="Xok-qQ-BdO"/>
                         <constraint firstAttribute="width" constant="324" id="b8w-um-qLR"/>
                     </constraints>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hih-Cp-cJS">
+                    <rect key="frame" x="155" y="365" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BGX-WI-Dox">
+                    <rect key="frame" x="285" y="365" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fXE-XK-8Te">
+                    <rect key="frame" x="25" y="365" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep7-dK-DeU">
+                    <rect key="frame" x="0.0" y="473" width="375" height="20"/>
+                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="0.83846413870000003" blue="0.50160306960000001" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="xn1-sA-y14" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="D3h-n8-EcG"/>
-                <constraint firstItem="xn1-sA-y14" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-23" id="NHV-s0-GOZ"/>
+                <constraint firstItem="xn1-sA-y14" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-128" id="NHV-s0-GOZ"/>
                 <constraint firstItem="XW9-Og-bB4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dcT-zq-Iex"/>
+                <constraint firstItem="Ep7-dK-DeU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fSm-Pj-KbH"/>
                 <constraint firstAttribute="bottom" secondItem="XW9-Og-bB4" secondAttribute="bottom" constant="80" id="t6n-m1-hd7"/>
+                <constraint firstItem="XW9-Og-bB4" firstAttribute="top" secondItem="Ep7-dK-DeU" secondAttribute="bottom" constant="30" id="uIl-JO-g9z"/>
+                <constraint firstAttribute="trailing" secondItem="Ep7-dK-DeU" secondAttribute="trailing" id="uWH-fl-aiX"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qCR-BA-Wqs">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+        </label>
     </objects>
     <resources>
         <image name="congrats" width="600" height="462"/>

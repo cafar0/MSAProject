@@ -13,17 +13,22 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
     var levelArray : [Level]?
     var levelIndex : Int?
     var levelModel : Level?
+    var totalStars : Int?
     let cellId = "LetterCollectionViewCellID"
+    var startArray : [UIImageView] = []
     
     @IBOutlet weak var levelImageView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionView2: UICollectionView!
     @IBOutlet weak var wordToImageConstraint: NSLayoutConstraint!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var star1: UIImageView!
+    @IBOutlet weak var star2: UIImageView!
+    @IBOutlet weak var star3: UIImageView!
     
     @IBAction func onBackButton(_ sender: Any) {
         
-        let _ = self.navigationController?.popToViewController((self.navigationController?.viewControllers[1])!, animated: true)
+        let _ = self.navigationController?.popToViewController((self.navigationController?.viewControllers[0])!, animated: true)
     }
     @IBAction func onNextButton(_ sender: Any) {
         
@@ -31,18 +36,22 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
             let viewController = LevelViewController()
             viewController.levelArray = levelArray
             viewController.levelIndex = self.levelIndex! + 1
+            viewController.totalStars = totalStars! + countStars()
             self.navigationController?.pushViewController(viewController, animated: true)
 
         }
         else {
             let VC = LevelCompleteViewController()
+            VC.starsAquired = totalStars! + countStars()
+            VC.totalStars   = (levelArray?.count)! * 3
             self.navigationController?.pushViewController(VC, animated: true)
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        startArray = [star3,star2,star1]
+        
         levelModel = levelArray?[levelIndex!]
         levelImageView.image = levelModel?.imageView
         nextButton.isHidden  = true
@@ -101,7 +110,26 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
                     collectionView2.isHidden = true
                 }
             }
+            else {
+                for star in startArray {
+                    if star.isHidden == false {
+                        star.isHidden = true
+                        break
+                    }
+                }
+            }
         }
+    }
+    
+    //MARK: Private
+    private func countStars() -> Int {
+        var number = 0
+        for star in startArray {
+            if star.isHidden == false{
+                number += 1
+            }
+        }
+        return number
     }
     
 }

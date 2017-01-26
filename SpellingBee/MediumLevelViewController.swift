@@ -13,6 +13,8 @@ class MediumLevelViewController: UIViewController, UICollectionViewDataSource, U
     var levelArray : [Level]?
     var levelIndex : Int?
     var levelModel : Level?
+    var totalStars : Int?
+    var starArray  : [UIImageView] = []
     let cellId = "LetterCollectionViewCellID"
     
     @IBOutlet weak var levelImageView: UIImageView!
@@ -21,6 +23,13 @@ class MediumLevelViewController: UIViewController, UICollectionViewDataSource, U
     @IBOutlet weak var wordToImageConstraint: NSLayoutConstraint!
     @IBOutlet weak var nextButton: UIButton!
     
+    @IBOutlet weak var star1: UIImageView!
+    @IBOutlet weak var star2: UIImageView!
+    @IBOutlet weak var star3: UIImageView!
+    
+    @IBAction func onBackButton(_ sender: Any) {
+        let _ = self.navigationController?.popToViewController((self.navigationController?.viewControllers[0])!, animated: true)
+    }
     
     @IBAction func onNextButton(_ sender: Any) {
         
@@ -28,11 +37,14 @@ class MediumLevelViewController: UIViewController, UICollectionViewDataSource, U
             let viewController = MediumLevelViewController()
             viewController.levelArray = levelArray
             viewController.levelIndex = self.levelIndex! + 1
+            viewController.totalStars = totalStars! + countStars()
             self.navigationController?.pushViewController(viewController, animated: true)
             
         }
         else {
             let VC = LevelCompleteViewController()
+            VC.starsAquired = totalStars! + countStars()
+            VC.totalStars   = (levelArray?.count)! * 3
             self.navigationController?.pushViewController(VC, animated: true)
         }
 
@@ -40,6 +52,7 @@ class MediumLevelViewController: UIViewController, UICollectionViewDataSource, U
        
     override func viewDidLoad() {
         super.viewDidLoad()
+        starArray = [star3, star2, star1]
         
         levelModel = levelArray?[levelIndex!]
         levelImageView.image = levelModel?.imageView
@@ -93,8 +106,12 @@ class MediumLevelViewController: UIViewController, UICollectionViewDataSource, U
             
             if (levelModel?.completeWord.contains(cell.letter!))!{
                 
-                let index = levelModel?.completeWord.index(of: cell.letter!)
-                levelModel?.incompleteWord[index!] = (levelModel?.completeWord[index!])!
+                for i in 0 ... (levelModel?.completeWord.count)!-1 {
+                    if levelModel?.completeWord[i] == cell.letter {
+                        levelModel?.incompleteWord[i] = (levelModel?.completeWord[i])!
+                    }
+                }
+                
                 self.collectionView.reloadData()
                 
                 if (levelModel?.isLevelComplete())! {
@@ -103,7 +120,26 @@ class MediumLevelViewController: UIViewController, UICollectionViewDataSource, U
                     collectionView2.isHidden = true
                 }
             }
+            else {
+                for star in starArray {
+                    if star.isHidden == false {
+                        star.isHidden = true
+                        break
+                    }
+                }
+            }
         }
+    }
+    
+    //MARK: Private
+    private func countStars() -> Int {
+        var number = 0
+        for star in starArray {
+            if star.isHidden == false{
+                number += 1
+            }
+        }
+        return number
     }
     
 }
