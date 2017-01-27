@@ -23,69 +23,24 @@ class DomainSelectViewController: UIViewController {
     
     @IBAction func onNextButton(_ sender: Any) {
         self.navigationController?.pushViewController(self.levelViewController!, animated: true)
-        self.navigationController?.isNavigationBarHidden = true
     }
     
     @IBAction func onFoodButton(_ sender: UIButton) {
         setNextButton(sender : sender)
         let levelArray = levelFactory.getFoodLevel()
-        
-        if difficultyLevel == "easy" {
-            let viewController = LevelViewController()
-            viewController.levelArray = levelArray
-            viewController.levelIndex = 0
-            viewController.totalStars = 0
-            self.levelViewController = viewController
-        }
-        if difficultyLevel == "medium" {
-            let viewController = MediumLevelViewController()
-            viewController.levelArray = levelArray
-            viewController.levelIndex = 0
-            viewController.totalStars = 0
-            self.levelViewController = viewController
-        }
-
+        prepareLevelViewController(with: levelArray)
     }
     
     @IBAction func onAnimalButton(_ sender: UIButton) {
         setNextButton(sender : sender)
         let levelArray = levelFactory.getAnimalLevel()
-        
-        if difficultyLevel == "easy" {
-            let viewController = LevelViewController()
-            viewController.levelArray = levelArray
-            viewController.levelIndex = 0
-            viewController.totalStars = 0
-            self.levelViewController = viewController
-        }
-        if difficultyLevel == "medium" {
-            let viewController = MediumLevelViewController()
-            viewController.levelArray = levelArray
-            viewController.levelIndex = 0
-            viewController.totalStars = 0
-            self.levelViewController = viewController
-        }
-
+        prepareLevelViewController(with: levelArray)
     }
+    
     @IBAction func onInsectsButton(_ sender: UIButton) {
-     
         setNextButton(sender : sender)
         let levelArray = levelFactory.getInsectLevel()
-        
-        if difficultyLevel == "easy" {
-            let viewController = LevelViewController()
-            viewController.levelArray = levelArray
-            viewController.levelIndex = 0
-            viewController.totalStars = 0
-            self.levelViewController = viewController
-        }
-        if difficultyLevel == "medium" {
-            let viewController = MediumLevelViewController()
-            viewController.levelArray = levelArray
-            viewController.levelIndex = 0
-            viewController.totalStars = 0
-            self.levelViewController = viewController
-        }
+        prepareLevelViewController(with: levelArray)
     }
     
     override func viewDidLoad() {
@@ -101,10 +56,29 @@ class DomainSelectViewController: UIViewController {
     
 
     /*MARK - Private functions*/
-    func setNextButton(sender : UIButton) {
+    private func setNextButton(sender : UIButton) {
         selectedImageView.image = sender.imageView?.image
         nextButton.isHidden  = false
         nextButton.isEnabled = true
     }
+    
+    private func prepareLevelViewController(with levelArray: [Level]) {
+        if difficultyLevel == "easy" {
+            let viewController = LevelViewController()
+            viewController.levelArray = levelArray
+            viewController.levelIndex = 0
+            viewController.totalStars = 0
+            self.levelViewController = viewController
+        }
+        if difficultyLevel == "medium" {
+            let viewController = MediumLevelViewController()
+            viewController.levelArray = levelArray
+            viewController.levelIndex = 0
+            viewController.totalStars = 0
+            self.levelViewController = viewController
+        }
+    }
+    
+    
 
 }

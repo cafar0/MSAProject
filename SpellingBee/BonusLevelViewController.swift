@@ -27,6 +27,10 @@ class BonusLevelViewController: UIViewController {
     @IBOutlet weak var middleStar: UIImageView!
     @IBOutlet weak var rightStar: UIImageView!
     
+    @IBAction func onBackButton(_ sender: Any) {
+        let _ = self.navigationController?.popToViewController((self.navigationController?.viewControllers[0])!, animated: true)
+    }
+    
     @IBAction func onLeftButton(_ sender: Any) {
         checkButton(label: leftLabel)
     }

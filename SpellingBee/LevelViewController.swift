@@ -8,14 +8,11 @@
 
 import UIKit
 
-class LevelViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class LevelViewController:  LevelController, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    var levelArray : [Level]?
-    var levelIndex : Int?
-    var levelModel : Level?
-    var totalStars : Int?
+  
     let cellId = "LetterCollectionViewCellID"
-    var startArray : [UIImageView] = []
+    
     
     @IBOutlet weak var levelImageView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -27,9 +24,9 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
     @IBOutlet weak var star3: UIImageView!
     
     @IBAction func onBackButton(_ sender: Any) {
-        
         let _ = self.navigationController?.popToViewController((self.navigationController?.viewControllers[0])!, animated: true)
     }
+    
     @IBAction func onNextButton(_ sender: Any) {
         
         if levelIndex! < (levelArray?.count)!-1 {
@@ -50,7 +47,7 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        startArray = [star3,star2,star1]
+        starArray = [star3,star2,star1]
         
         levelModel = levelArray?[levelIndex!]
         levelImageView.image = levelModel?.imageView
@@ -111,7 +108,7 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
                 }
             }
             else {
-                for star in startArray {
+                for star in starArray {
                     if star.isHidden == false {
                         star.isHidden = true
                         break
@@ -120,16 +117,4 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
             }
         }
     }
-    
-    //MARK: Private
-    private func countStars() -> Int {
-        var number = 0
-        for star in startArray {
-            if star.isHidden == false{
-                number += 1
-            }
-        }
-        return number
-    }
-    
 }

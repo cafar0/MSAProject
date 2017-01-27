@@ -8,13 +8,9 @@
 
 import UIKit
 
-class MediumLevelViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class MediumLevelViewController: LevelController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var levelArray : [Level]?
-    var levelIndex : Int?
-    var levelModel : Level?
-    var totalStars : Int?
-    var starArray  : [UIImageView] = []
+
     let cellId = "LetterCollectionViewCellID"
     
     @IBOutlet weak var levelImageView: UIImageView!
@@ -130,16 +126,4 @@ class MediumLevelViewController: UIViewController, UICollectionViewDataSource, U
             }
         }
     }
-    
-    //MARK: Private
-    private func countStars() -> Int {
-        var number = 0
-        for star in starArray {
-            if star.isHidden == false{
-                number += 1
-            }
-        }
-        return number
-    }
-    
 }

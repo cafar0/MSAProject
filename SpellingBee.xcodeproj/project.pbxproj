@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D32A40B91E3B7ACD0099D32E /* LevelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A40B81E3B7ACD0099D32E /* LevelController.swift */; };
 		D32B22081E1C37CF00599545 /* LevelCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B22061E1C37CF00599545 /* LevelCompleteViewController.swift */; };
 		D32B22091E1C37CF00599545 /* LevelCompleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32B22071E1C37CF00599545 /* LevelCompleteViewController.xib */; };
 		D34A25F11E13B7C600EC02CC /* LevelSnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A25F01E13B7C600EC02CC /* LevelSnail.swift */; };
@@ -74,6 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D32A40B81E3B7ACD0099D32E /* LevelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelController.swift; sourceTree = "<group>"; };
 		D32B22061E1C37CF00599545 /* LevelCompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LevelCompleteViewController.swift; path = SpellingBee/LevelCompleteViewController.swift; sourceTree = "<group>"; };
 		D32B22071E1C37CF00599545 /* LevelCompleteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LevelCompleteViewController.xib; path = SpellingBee/LevelCompleteViewController.xib; sourceTree = "<group>"; };
 		D34A25F01E13B7C600EC02CC /* LevelSnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSnail.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 				D37C32631DE759EC00B0A74F /* DomainSelectViewController.swift */,
 				D37C32641DE759EC00B0A74F /* DomainSelectViewController.xib */,
 				D34C39711E16D26300C7DE9D /* levelFactory.swift */,
+				D32A40B81E3B7ACD0099D32E /* LevelController.swift */,
 				D34A25FA1E13BDCE00EC02CC /* EasyLevel */,
 				D3584E1D1E1703100082C3F3 /* MediumLevel */,
 				D34A5AC31E256EDA00D976A5 /* BonusLevel */,
@@ -473,6 +476,7 @@
 				D34A5AB01E25663900D976A5 /* LevelPenguin.swift in Sources */,
 				D34A5AAD1E25663900D976A5 /* LevelHorse.swift in Sources */,
 				D3584E201E1703680082C3F3 /* MediumLevelViewController.swift in Sources */,
+				D32A40B91E3B7ACD0099D32E /* LevelController.swift in Sources */,
 				D34A5A9A1E25628700D976A5 /* LevelScarab.swift in Sources */,
 				D34A5AC21E256A1200D976A5 /* LevelSausage.swift in Sources */,
 				D34A5A921E2561B200D976A5 /* LevelBee.swift in Sources */,
