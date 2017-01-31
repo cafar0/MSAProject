@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LevelViewController:  LevelController, UICollectionViewDataSource, UICollectionViewDelegate {
+class LevelViewController: LevelController, UICollectionViewDataSource, UICollectionViewDelegate {
 
   
     let cellId = "LetterCollectionViewCellID"

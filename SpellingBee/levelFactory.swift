@@ -40,7 +40,7 @@ class levelFactory: NSObject {
         
         while(wordCount > 0) {
             let option = wordsList[Int(arc4random_uniform(UInt32(lettersList.count-1)))]
-            if !availableWordsList.contains(option) {
+            if !availableWordsList.contains(option) && !extraWords.contains(option) {
                 extraWords.append(option)
                 wordCount -= 1
             }
@@ -50,36 +50,63 @@ class levelFactory: NSObject {
     }
     
     static func getInsectLevel() -> [Level] {
-        return [LevelSnail(),
-                LevelSpider(),
-                LevelBee(),
-                LevelLadybug(),
-                LevelAnt(),
-                LevelScarab(),
-                LevelMantis()
-               ]
+        var levels : [Level] = []
+        let tempArray = [LevelSnail(),
+                         LevelSpider(),
+                         LevelBee(),
+                         LevelLadybug(),
+                         LevelAnt(),
+                         LevelScarab(),
+                         LevelMantis()
+                        ]
+        var randomIndex = Int(arc4random_uniform(UInt32(tempArray.count-1)))
+        for _ in 0 ... tempArray.count-1 {
+            levels.append(tempArray[randomIndex % tempArray.count])
+            randomIndex += 1
+        }
+        
+        return  levels
     }
     
     static  func getAnimalLevel() -> [Level] {
-        return [LevelBear(),
-                LevelBunny(),
-                LevelCat(),
-                LevelGiraffe(),
-                LevelLion(),
-                LevelPenguin(),
-                LevelHorse()
-               ]
+        var levels : [Level] = []
+        let tempArray = [LevelBear(),
+                         LevelBunny(),
+                         LevelCat(),
+                         LevelGiraffe(),
+                         LevelLion(),
+                         LevelPenguin(),
+                         LevelHorse()
+                        ]
+        var randomIndex = Int(arc4random_uniform(UInt32(tempArray.count-1)))
+        for _ in 0 ... tempArray.count-1 {
+            levels.append(tempArray[randomIndex % tempArray.count])
+            randomIndex += 1
+        }
+        
+        return  levels
+
     }
     
      static func getFoodLevel() -> [Level] {
-        return [LevelBurger(),
-                LevelFries(),
-                LevelApple(),
-                LevelCheese(),
-                LevelSausage(),
-                LevelPizza(),
-                LevelSalami()
-                ]
+        var levels : [Level] = []
+        let tempArray = [LevelBurger(),
+                         LevelFries(),
+                         LevelApple(),
+                         LevelCheese(),
+                         LevelSausage(),
+                         LevelPizza(),
+                         LevelSalami()
+                        ]
+        var randomIndex = Int(arc4random_uniform(UInt32(tempArray.count-1)))
+        for _ in 0 ... tempArray.count-1 {
+            levels.append(tempArray[randomIndex % tempArray.count])
+            randomIndex += 1
+        }
+        
+        return  levels
+
+        
     }
     
     

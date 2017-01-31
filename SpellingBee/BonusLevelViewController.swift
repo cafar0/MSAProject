@@ -79,8 +79,7 @@ class BonusLevelViewController: UIViewController {
             else {
                 let viewController = LevelCompleteViewController()
                 viewController.starsAquired = totalStars! + countStars()
-                
-                viewController.totalStars = levelModel.count * 3
+                viewController.totalStars   = (level! + 1) * 3
                 self.navigationController?.pushViewController(viewController, animated: true)
             }
         }
